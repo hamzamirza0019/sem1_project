@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .page1 {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg, #eddfeb, #f2b9f3, #f1d48f, #f6b7d6, #c5d7d3, #87f4b6);
+            background-size: 300% 300%;
+            animation: color 8s ease-in-out infinite;
+        }
+
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 6px;
+            font-size: 25px;
+        }
+
+        .book-container {
+            width: 60%;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .feedback-container {
+            background-color: rgb(216, 252, 247);
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer {
+            margin-top: 120px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 8px;
+            font-size: 15px;
+        }
+        .home{
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .book-container {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .feedback-container {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            header {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .book-container {
+                padding: 10px;
+            }
+
+            header {
+                font-size: 20px;
+            }
+
+            .feedback-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <header>Welcome to Book Showcase</header>
+
+        <div class="home p-2 bg-secondary text-end">
+            <a href="../sem1_project.html" class="text-white">Home</a>
+        </div>
+
+        <div class="book-container form-control col-12 col-md-8 col-lg-6 mx-auto">
+            <h4>Book 2: Grow and Gather</h4>
+            <div class="text-center">
+                <img src="../public/images/project2.jpg" class="img-fluid" alt="Book Image" height="250px" width="150px">
+            </div>
+
+            <br>
+
+            <details>
+                <summary>Genre</summary>
+                <ul>
+                    <li>Fiction</li>
+                    <li>Romance</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Index Page</summary>
+                <ul>
+                    <li>Part 1: The Beginning of the End</li>
+                    <li>Part 2: Heartbreak and Healing</li>
+                    <li>
+                        Part 3: Moving On and New Beginnings</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Authors</summary>
+                <ul>
+                    <li>Rithwik Singh</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Overviews</summary>
+                <ul>
+                    <li>"I Don't Love You Anymore" is an emotional novel that delves into themes of love, heartbreak, and self-discovery. The story follows a journey of loss, acceptance, and personal growth as the characters navigate the complexities of relationships and finding themselves again.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Purchase Links</summary>
+                <ul>
+                    <li><a href="https://www.amazon.in/Dont-Love-You-Anymore-Bestseller/dp/B0CY4WYQ8W?utm_source=chatgpt.com">Amazon</a></li>
+                    <li><a href="https://www.flipkart.com/don-t-love-you-anymore-moving-living-your-best-life/p/itm55ac4e55219cb?utm_source=chatgpt.com">Flipkart</a></li>
+                </ul>
+            </details>
+
+            <h5 class="mt-4 fst-italic"><b>Feedback Form</b></h5>
+            <form action="">
+                <div class="feedback-container form-control mx-auto col-12">
+                    <dl>
+                        <dt>Name:</dt>
+                        <dd><input type="text" class="form-control"></dd>
+    
+                        <dt>Feedback:</dt>
+                        <dd><textarea class="form-control"></textarea></dd>
+    
+                        <button class="btn btn-primary w-100 mt-3">Submit Feedback</button>
+                    </dl>
+                </div>
+            </form>
+        </div>
+
+        <footer bg-black>@ 2025 Book ShowCase | ALL rights reserved</footer>
+    </div>
+</body>
+</html>

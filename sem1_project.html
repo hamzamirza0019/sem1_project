@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        * {
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #eddfeb, #f5b5f6, #f1d48f, #f6b7d6, #c6ddd8, #87f4b6);
+            background-size: 700% 700%;
+            animation: color 8s ease-in-out infinite;
+        }
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .header{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                text-align: center;
+
+        }
+        .home{
+                background-color: rgba(0, 0, 0, 0.9);
+                color: white;
+                text-align: end;
+        
+        }
+
+        .sub_header{
+                padding: 10px;
+                text-align: center;
+            }
+
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+            perspective: 1000px; /* Add perspective for 3D effect */
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg); /* Flip the card on hover */
+        }
+
+        .card .front,
+        .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .card .back {
+            transform: rotateY(180deg);
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card .back button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card .back button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            Welcome to My Book Showcase
+        </div>
+    
+        <div class="sub_header">
+            Explore Top Books
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="front">
+                            <img src="../public/images/project1.jpg" alt="Book 1" class="img-fluid" style="height: 300px;">
+                        </div>
+                        <div class="back">
+                            <button ><a href="../book1_project.html">View Details</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="front">
+                            <img src="../public/images/project2.jpg" alt="Book 2" class="img-fluid">
+                        </div>
+                        <div class="back">
+                            <button ><a href="../book2_project.html">View Details</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="front">
+                            <img src="../public/images/project3.jpeg" alt="Book 3" class="img-fluid">
+                        </div>
+                        <div class="back">
+                            <button ><a href="../book3_project.html">View Details</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer text-center mt-4 bg-black text-white">
+            <p class="fs-6"> &copy; 2025 My Book Showcase | All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

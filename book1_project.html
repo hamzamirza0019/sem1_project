@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .page1 {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg, #eddfeb, #f5b5f6, #f1d48f, #f6b7d6, #c6ddd8, #87f4b6);
+            background-size: 300% 300%;
+            animation: color 8s ease-in-out infinite;
+        }
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+        header {
+            text-align: center;
+            /* background-color: rgb(51, 73, 107); */
+            background-color: black;
+            color: white;
+            padding: 6px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home {
+            /* background-color: rgb(162, 77, 115); */
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: right;
+            padding: 10px;
+        }
+        .bookcase {
+            width: 60%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .bookcase img {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            width: 100%;
+            max-width: 150px;
+        }
+        .form-control {
+            margin-top: 30px;
+            background-color: rgb(216, 252, 247);
+            padding: 20px;
+        }
+        dl dt, dl dd {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 15px;
+        }
+        footer {
+            margin-top: 120px;
+            text-align: center;
+            background-color: rgb(51, 73, 107);
+            color: white;
+            padding: 8px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* For mobiles and tablets */
+        @media screen and (max-width: 800px) {
+            .page1 {
+                padding-left: 0;
+            }
+            .bookcase {
+                width: 90%;
+                padding: 20px;
+            }
+            .bookcase img {
+                max-width: 120px;
+            }
+            .form-control {
+                width: 100%;
+                padding: 15px;
+            }
+            input[type="text"], textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="page1">
+        <header>Welcome to Book Showcase</header>
+        <div class="home"><a href="sem1_project.html">Home</a></div>
+        <div class="bookcase">
+            <h4>Book 1: Peer e Kamil</h4>
+            <div class="front1">
+                <img src="../public/images/project1.jpg" alt="The Art of Reading Book">
+            </div><br>
+            <details>
+                <summary>Genre</summary>
+                <ul>
+                    <li>Fiction</li>
+                    <li>Spiritual</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Index Page</summary>
+                <ul>
+                    <li>Part 1: Introduction to the Journey</li>
+                    <li>Part 2: Transformation & Self-Discovery</li>
+                    <li>Part 3: The Spiritual Awakening</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Authors</summary>
+                <ul>
+                    <li>Umera Ahmad</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Overviews</summary>
+                <ul>
+                    <li>"Peer-e-Kamil" is a thought-provoking novel that explores themes of spirituality, transformation, and the pursuit of inner peace. The story revolves around two individuals whose lives change as they embark on a journey of self-discovery and faith.</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Purchase Links</summary>
+                <ul>
+                    <li><a href="https://www.amazon.in/Peer-Kamil-Umera-Ahmed/dp/8194893755?utm_source=chatgpt.com">Amazon</a></li>
+                    <li><a href="https://www.flipkart.com/peer-e-kamil/p/itm090b9a974d512?utm_source=chatgpt.com">Flipkart</a></li>
+                </ul>
+            </details>
+            
+            <form action="">
+                <h5 class="mt-2 fst-italic"><b>Feedback Form</b></h5>
+                <div class="form-control">
+                    <dl>
+                        <dt>Name:</dt>
+                        <dd><input type="text"></dd>
+                        <dt>Feedback:</dt>
+                        <dd><textarea></textarea></dd>
+                        <button class="btn btn-primary w-100">Submit Feedback</button>
+                    </dl>
+                </div>
+            </form>
+        </div>
+        <footer>@ 2025 Book ShowCase | ALL rights reserved</footer>
+    </div>
+</body>
+</html>
